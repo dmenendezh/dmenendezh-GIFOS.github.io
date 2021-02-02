@@ -69,15 +69,13 @@ const createGifo = () => {
 
 $buttonGrabar.addEventListener('click', createGifo);
 
-// TODO función para parar la grabación
 const stopCreatingGif = () => {
 	$video.classList.add('hidden');
 	$recordedGifo.classList.remove('hidden');
 	recorder.stopRecording(() => {
 		blob = recorder.getBlob();
 		$recordedGifo.src = URL.createObjectURL(blob);
-
-		form.append('file', recorder.getBlob(), 'myGif.gif');
+		form.append('file', recorder.getBlob(), 'gifGenerado.gif');
 		console.log(form.get('file'));
 	});
 

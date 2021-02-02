@@ -3,26 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIFOS</title>
-    
-    <!--icon-->
-    <link rel="icon" href="assets/logo-mobile.svg">
-    <!--style-->
+	<title>GIFOS</title>
+	<link rel="icon" href="assets/logo-desktop.svg">
     <link rel="stylesheet" href="./styles/styles.css">
-
-    <!-- fontawesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-
-
-    <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap"
-    rel="stylesheet">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
 </head>
 <body>    
     <header class="header" id="header">
-
 		<a class="link_logo" href="index.html" id="logoSection">
 			<img id="logo" class="imagen_logo" src="assets/logo-desktop.svg" alt="Logo">
 		</a>
@@ -35,7 +23,7 @@
         </div>
         
 		<nav class="navbar">
-			<img src="assets/burger.svg" alt="Menu hamburguesa" class="navbar_burguer" id="navbar_burger">
+			<img src="assets/burger.svg" alt="Menu" class="navbar_burguer" id="navbar_burger">
 
 			<ul class="list hidden_menu" id="list">
 				<li class="list_item">
@@ -58,7 +46,6 @@
 				</li>
 			</ul>
 		</nav>
-
 	</header>
 
 	<main id="main_container" class="topContainers">
@@ -106,7 +93,6 @@
 
 
 	<section class="topContainers hidden" id="favorites_section">
-
 		<img src="assets/icon-favoritos.svg" alt="Imagen decorativa">
 		<h2 class="title">Favoritos</h2>
 
@@ -114,13 +100,11 @@
 			<img class="image_empty" src="assets/icon-fav-sin-contenido.svg" alt="Imagen decorativa">
 			<h3 class="text_empty">¡Guarda tu primer GIFO en Favoritos <br> para que se muestre aquí!</h3>
 		</section>
-
 		<div class="search_result">
 			<div class="sresult_gallery hidden" id="fav_container">
 				<!-- gifos favoritos embebidos -->
 			</div>
 		</div>
-
 	</section>
 
 	<section class="topContainers hidden" id="misGifosSection">
@@ -136,20 +120,16 @@
 				<!-- gifos creados embebidos -->
 			</div>
 		</div>
-
 	</section>
 
 	<div class="creation_container hidden" id="creation_container">
-
 		<div class="creategif_container">
-
 			<div class="createGif_camera">
 				<img id="camera" src="assets/camara.svg" alt="Cámara filmadora ilustrativa">
 				<img class="path" id="path" src="assets/element-luz-camara.svg" alt="Luz de camara filmadora">
 			</div>
 
 			<div class="recordingZone">
-
 				<div class="corner top--left"></div>
 				<div class="corner top--right"></div>
 				<div class="corner bottom--left"></div>
@@ -166,6 +146,7 @@
 					<video class="recording_video hidden" id="recording_video"></video>
 
 					<img class="recorded_video hidden" alt="Recorded video" src ="-" id="recorded_gifo"/>
+
 
 					<div class="overlay" id="overlay">
 						<div class="overlay_status_container" id="overlay_status_container">
@@ -194,10 +175,7 @@
 			<a href="" class="timer__repeatShot timer__text hidden" id="repeatShot">REPETIR CAPTURA</a>
 		</div>
 
-		<!-- linea decorativa -->
 		<hr class="border">
-
-				<!-- botones -->
 				<div class="button_container">
 					<a class="button" id="button_comenzar">COMENZAR</a>
 					<a class="button" id="button_grabar">GRABAR</a>
