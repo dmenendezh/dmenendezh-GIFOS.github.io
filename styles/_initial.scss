@@ -9,11 +9,11 @@
 
 body {
 	font-family: $primary-font;
-	color: $purple;
+	color: $color1;
 	transition: $transition;
 
 	&.darkMode {
-		background-color: $backgroundDark;
+		background-color: $color5;
 		color: #fff;
 	}
 }

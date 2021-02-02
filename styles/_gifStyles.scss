@@ -33,7 +33,7 @@
 			height: 11rem;
 			position: absolute;
 			top: 0;
-			background-color: $purpleTransparency;
+			background-color: $color7;
 			transition: 0.2s ease-in-out;
 
 			&:hover {
@@ -138,7 +138,7 @@
 	z-index: 2000;
 
 	body.darkMode & {
-		background-color: $backgroundDark;
+		background-color: $color5;
 	}
 
 	&__container {

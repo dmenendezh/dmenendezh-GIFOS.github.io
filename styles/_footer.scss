@@ -27,7 +27,7 @@
 			color: rgb(172, 172, 172);
 
 			&:hover {
-				color: $purple;
+				color: $color1;
 				width: 2.5rem;
 
 				body.darkMode & {
@@ -42,7 +42,7 @@
 		padding: 4rem 8rem 4rem 8rem;
 		display: flex;
 		justify-content: space-between;
-		border-bottom: 5px solid $purple;
+		border-bottom: 5px solid $color1;
 
 		.footer_container {
 			display: flex;

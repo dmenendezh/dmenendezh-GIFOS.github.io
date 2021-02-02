@@ -23,7 +23,7 @@
 			font-size: 2.5em;
 		}
 		.main-decoration-text {
-			color: $aqua;
+			color: $color2;
 		}
 	}
 	.searcher_bar {
@@ -38,7 +38,7 @@
 			margin: 0 auto;
 			top: -5px;
 			padding: 10px;
-			border: 1px solid $purple;
+			border: 1px solid $color1;
 			border-radius: 20px;
 			display: flex;
 			justify-content: space-between;
@@ -58,7 +58,7 @@
 				background-color: none;
 				font-family: $primary-font;
 				font-size: 16px;
-				color: $lightGray;
+				color: $color4;
 				outline: none;
 				body.darkMode & {
 					background-color: transparent;
@@ -80,7 +80,7 @@
 		}
 	}
 	.suggestions_container {
-		border: 1px solid $purple;
+		border: 1px solid $color1;
 		border-top-color: transparent;
 		border-bottom-left-radius: 20px;
 		border-bottom-right-radius: 20px;
@@ -92,7 +92,7 @@
 		.sugestion_list {
 			width: 95%;
 			margin: 0 auto 2% auto;
-			color: $lightGray;
+			color: $color4;
 		}
 		@media screen and (min-width: $tablet) {
 			width: 40%;
@@ -165,7 +165,7 @@
 		font-weight: 500;
 		font-size: 1.2em;
 		line-height: 3em;
-		color: $aqua;
+		color: $color2;
 	}
 }
 
@@ -193,7 +193,7 @@
 	}
 	.text_empty {
 		padding: 1rem 0 1rem 0;
-		color: $aqua;
+		color: $color2;
 		font-size: 16px;
 	}
 }
@@ -211,7 +211,7 @@
 		display: block;
 		width: fit-content;
 		margin: 1rem auto;
-		border: 1.8px solid $purple;
+		border: 1.8px solid $color1;
 		border-radius: 2rem;
 		padding: 1.2rem 1.3rem;
 		text-decoration: none;
@@ -219,10 +219,10 @@
 		text-align: center;
 		font-weight: 500;
 		font-size: 13px;
-		color: $purple;
+		color: $color1;
 		cursor: pointer;
 		&:hover {
-			background-color: $purple;
+			background-color: $color1;
 			color: #fff;
 		}
 		body.darkMode & {
@@ -257,7 +257,7 @@
 			padding: 2rem;
 			width: 50%;
 			height: 20rem;
-			border: 1px solid $purple;
+			border: 1px solid $color1;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
@@ -296,7 +296,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			background-color: $purpleTransparency;
+			background-color: $color1Transparency;
 			color: #fff;
 			z-index: 90;
 			display: flex;
@@ -333,7 +333,7 @@
 			height: 2rem;
 			padding-top: 0.2em;
 			margin: 1.5rem 0.5rem 1.5rem 0.5rem;
-			border: 1px solid $purple;
+			border: 1px solid $color1;
 			border-radius: 50%;
 			font-size: 1.2em;
 			body.darkMode & {
@@ -341,18 +341,18 @@
 			}
 		}
 		.step-active {
-			background-color: $purple;
+			background-color: $color1;
 			color: #fff;
 		}
 	}
 	#repeatShot {
-		color: $purple;
+		color: $color1;
 		text-decoration: none;
 		&:hover {
-			border-bottom: 2px solid $aqua;
+			border-bottom: 2px solid $color2;
 		}
 		&:active {
-			color: $lightGray;
+			color: $color4;
 			border-bottom: hidden;
 		}
 	}
@@ -388,33 +388,33 @@
 		position: absolute;
 	}
 	.top--left {
-		border-top: 1px solid $aqua;
-		border-left: 1px solid $aqua;
+		border-top: 1px solid $color2;
+		border-left: 1px solid $color2;
 		top: 1.25rem;
 		left: 1.25rem;
 	}
 	.top--right {
-		border-top: 1px solid $aqua;
-		border-right: 1px solid $aqua;
+		border-top: 1px solid $color2;
+		border-right: 1px solid $color2;
 		top: 1.25rem;
 		right: 1.25rem;
 	}
 	.bottom--right {
-		border-bottom: 1px solid $aqua;
-		border-right: 1px solid $aqua;
+		border-bottom: 1px solid $color2;
+		border-right: 1px solid $color2;
 		bottom: 1.25rem;
 		right: 1.25rem;
 	}
 	.bottom--left {
-		border-bottom: 1px solid $aqua;
-		border-left: 1px solid $aqua;
+		border-bottom: 1px solid $color2;
+		border-left: 1px solid $color2;
 		bottom: 1.25rem;
 		left: 1.25rem;
 	}
 	.border {
 		width: 58%;
 		margin: 0 auto;
-		border: 2px solid $purple;
+		border: 2px solid $color1;
 	}
 }
 
@@ -423,7 +423,7 @@
 	background-color: #f3f5f8;
 	text-align: center;
 	body.darkMode & {
-		background-color: $backgroundBlack;
+		background-color: $color6;
 	}
 	&__title {
 		margin: 10px;
@@ -492,7 +492,7 @@
 }
 
 .sugestion_list {
-	color: $lightGray;
+	color: $color4;
 }
 
 .suggests_searchbtnIcon {

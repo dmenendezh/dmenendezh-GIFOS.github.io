@@ -1,6 +1,6 @@
 .header {
 	width: 100%;
-	border-top: 5px solid $purple;
+	border-top: 5px solid $color1;
 	padding: 2% 10% 1.5% 10%;
 	position: fixed;
 	background-color: white;
@@ -11,7 +11,7 @@
 	z-index: 1000;
 
 	body.darkMode & {
-		background-color: $backgroundDark;
+		background-color: $color5;
 		border: none;
 	}
 }
@@ -54,11 +54,11 @@
 		position: absolute;
 		top: 100%;
 		left: 0;
-		background-color: transparentize($purple, 0.1);
+		background-color: transparentize($color1, 0.1);
 		text-align: center;
 
 		body.darkMode & {
-			background-color: $backgroundBlack;
+			background-color: $color6;
 		}
 
 		@media screen and (min-width: $tablet) {
@@ -93,15 +93,15 @@
 			width: fit-content;
 			padding-top: 1rem;
 			line-height: 1.5rem;
-			color: $purple;
+			color: $color1;
 			text-transform: uppercase;
 
 			&:hover {
-				border-bottom: 2px solid $aqua;
+				border-bottom: 2px solid $color2;
 			}
 
 			&:active {
-				color: $lightGray;
+				color: $color4;
 				border-bottom: hidden;
 			}
 		}
@@ -116,7 +116,7 @@
 	width: 30%;
 	height: 60%;
 	padding: 1%;
-	border: 1px solid $purple;
+	border: 1px solid $color1;
 	border-radius: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -131,7 +131,7 @@
 		width: 100%;
 		padding-left: 3%;
 		border: none;
-		color: $lightGray;
+		color: $color4;
 
 		font-family: $primary-font;
 		font-size: 14px;
