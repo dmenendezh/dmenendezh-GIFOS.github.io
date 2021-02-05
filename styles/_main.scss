@@ -8,6 +8,16 @@
 	}
 }
 
+.darkMode{
+	background-color: $color5;
+	h1,h2,h4{
+		color:$color3;
+	}
+	p{
+		color:$color3;
+	}
+}
+
 .main_section {
 	position: relative;
 	.main_title {
@@ -167,6 +177,45 @@
 		line-height: 3em;
 		color: $color2;
 	}
+
+	.btn_show_more {
+		display: block;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		margin: 1rem auto;
+		border: 1.8px solid #572ee5;
+		border-radius: 2rem;
+		padding: 1.2rem 1.3rem;
+		text-decoration: none;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+		font-weight: 500;
+		font-size: 13px;
+		color: #572ee5;
+		cursor: pointer;
+	}
+
+	.btn_show_more:hover{
+		background-color: $color1;
+		color:$color3;
+	}
+
+	
+
+}
+
+.darkMode{
+	.btn_show_more {
+		background-color: $color5;
+		color:$color3;
+		border: 1.8px solid $color3;
+	}
+	.btn_show_more:hover{
+		background-color: $color3;
+		color:$color5;
+		border: 1.8px solid $color3;
+	}
 }
 
 .fav_container {
@@ -262,11 +311,12 @@
 			}
 		}
 		.createGif_title {
-			font-family: $secondary-font;
-			.gifos_text{
-				color: $color2;
-			}
+			font-family: $secondary-font;			
 		}
+		.gif_text_color{
+			color: $color2;
+		}
+
 		.createGif_text {
 			padding-top: 10px;
 			color: #000;
@@ -291,7 +341,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			background-color: $color1Transparency;
+			background-color: $color7;
 			color: #fff;
 			z-index: 90;
 			display: flex;
@@ -302,8 +352,8 @@
 				display: flex;
 				flex-direction: column;
 				.overlay_status_icon {
-					width: 155px;
-					height: 24px;
+					width: 18px;
+					height: 13px;
 					margin-right: 0px;
 					border-top-width: 0px;
 					margin-top: 0px;
