@@ -11,7 +11,7 @@
 </head>
 <body>    
     <header class="header" id="header">
-		<a class="link_logo" href="index.html" id="logoSection">
+		<a class="link_logo" href="index.html" id="section_logo">
 			<img id="logo" class="imagen_logo" src="assets/logo-desktop.svg" alt="Logo">
 		</a>
 		
@@ -41,7 +41,7 @@
 
 				<li class="navbar_list_item hidden_menu">
 					<a href="" id="crearGifosMenu">
-						<img class="navbar__createGif" id="crateGifBtn" src="assets/button-crear-gifo.svg" alt="">
+						<img class="navbar_create_gif" id="btn_crear_gif" src="assets/button-crear-gifo.svg" alt="">
 					</a>
 				</li>
 			</ul>
@@ -116,7 +116,7 @@
 		</section>
 
 		<div class="search_result">
-			<div class="sresult_gallery" id="misGifos-container">
+			<div class="sresult_gallery" id="mis_gifs_container">
 				<!-- gifos creados embebidos -->
 			</div>
 		</div>
@@ -130,12 +130,12 @@
 			</div>
 
 			<div class="recordingZone">
-				<div class="corner top--left"></div>
-				<div class="corner top--right"></div>
-				<div class="corner bottom--left"></div>
-				<div class="corner bottom--right"></div>
+				<div class="beta top_left"></div>
+				<div class="beta top_right"></div>
+				<div class="beta bottom_left"></div>
+				<div class="beta bottom_right"></div>
 
-				<div class="recordingZone_content">
+				<div class="recording_container">
 
 					<h3 class="createGif_title" id="createGif_title">Aquí podrás <br> crear tus propios <span
 							class="aqua-text">GIFOS</span> </h3>
@@ -147,7 +147,6 @@
 
 					<img class="recorded_video hidden" alt="Recorded video" src ="-" id="recorded_gifo"/>
 
-
 					<div class="overlay" id="overlay">
 						<div class="overlay_status_container" id="overlay_status_container">
 							<img src="assets/loader.svg" class="overlay_status_icon" alt="Loading gif" id="overlay_status_icon">
@@ -156,55 +155,49 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="crearGif_Pelicula">
-				<img class="celuloide" id="celuloide" src="assets/pelicula.svg" alt="Ilustracion pelicula">
+			<div class="crear_gif_pelicula">
+				<img class="movie" id="movie" src="assets/pelicula.svg" alt="Ilustracion pelicula">
 			</div>
 
 		</div>
 
 		<div class="pagination">
-			<p class="step" id="step-1">1</p>
-			<p class="step" id="step-2">2</p>
-			<p class="step" id="step-3">3</p>
+			<p class="step" id="step_one">1</p>
+			<p class="step" id="step_two">2</p>
+			<p class="step" id="step_three">3</p>
 		</div>
 
 
 		<div class="timer">
-			<p class="timer__recorder timer__text hidden" id="timer-recording">00:00:00</p>
-			<a href="" class="timer__repeatShot timer__text hidden" id="repeatShot">REPETIR CAPTURA</a>
+			<p class="time_recorder time_text hidden" id="recording">00:00:00</p>
+			<a href="" class="time_repeat_shot time_text hidden" id="repeat_shot">REPETIR CAPTURA</a>
 		</div>
 
 		<hr class="border">
 				<div class="button_container">
-					<a class="button" id="button_comenzar">COMENZAR</a>
-					<a class="button" id="button_grabar">GRABAR</a>
-					<a class="button" id="button_finalizar">FINALIZAR</a>
-					<a class="button" id="button_subirGif">SUBIR GIFO</a>
+					<a class="button" id="btn_comenzar">COMENZAR</a>
+					<a class="button" id="btn_grabar">GRABAR</a>
+					<a class="button" id="btn_finalizar">FINALIZAR</a>
+					<a class="button" id="btn_upload">SUBIR GIFO</a>
 				</div>
 			</div>
 
-			<section class="trending" id="trendingSection">
-				<h2 class="trending__title">Trending GIFOS</h2>
-				<p class="trending__paragraph">Mira los últimos GIFOS de nuestra comunidad</p>
-		
-				<div class="trending__container">
-					<div class="previous-btn arrows">
-						<img src="assets/button-slider-left.svg" alt="Flecha Previous" id="previous-btn">
-					</div>
-		
-					<div class="trending__slider--container">
-						<div class="trending__slider" id="trending__slider">
+			<section class="trending" id="trending_section">
+				<h2 class="trending_title">Trending GIFOS</h2>
+				<p class="trending_p">Mira los últimos GIFOS de nuestra comunidad</p>		
+				<div class="trendings_container">
+					<div class="btn_previous arrows">
+						<img src="assets/button-slider-left.svg" alt="Flecha previous" id="btn_previous">
+					</div>		
+					<div class="slider_trendings_container">
+						<div class="slider" id="slider">
 							<!-- trendings embebidos -->
 						</div>
-					</div>
-		
-					<div class="next-btn arrows">
-						<img src="assets/Button-Slider-right.svg" alt="Flecha Next" id="next-btn">
-					</div>
-		
-				</div>
-		
+					</div>		
+					<div class="btn_next arrows">
+						<img src="assets/Button-Slider-right.svg" alt="Flecha next" id="btn_next">
+					</div>		
+				</div>		
 			</section>
 	
 	<footer class="footer">

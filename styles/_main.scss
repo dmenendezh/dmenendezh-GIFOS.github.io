@@ -239,7 +239,7 @@
 				top: -1rem;
 			}
 		}
-		.crearGif_Pelicula {
+		.crear_gif_pelicula {
 			max-width: 25%;
 			height: 20rem;
 			padding-top: 18rem;
@@ -337,7 +337,7 @@
 			color: #fff;
 		}
 	}
-	#repeatShot {
+	#repeat_shot {
 		color: $color1;
 		text-decoration: none;
 		&:hover {
@@ -354,7 +354,7 @@
 		position: absolute;
 		top: 79%;
 		right: 24%;
-		.timer__text {
+		.time_text {
 			font-family: $secondary-font;
 			font-size: 16px;
 			line-height: 22px;
@@ -374,30 +374,30 @@
 			cursor: pointer;
 		}
 	}
-	.corner {
+	.beta {
 		width: 1.7rem;
 		height: 1.7rem;
 		position: absolute;
 	}
-	.top--left {
+	.top_left {
 		border-top: 1px solid $color2;
 		border-left: 1px solid $color2;
 		top: 1.25rem;
 		left: 1.25rem;
 	}
-	.top--right {
+	.top_right {
 		border-top: 1px solid $color2;
 		border-right: 1px solid $color2;
 		top: 1.25rem;
 		right: 1.25rem;
 	}
-	.bottom--right {
+	.bottom_right {
 		border-bottom: 1px solid $color2;
 		border-right: 1px solid $color2;
 		bottom: 1.25rem;
 		right: 1.25rem;
 	}
-	.bottom--left {
+	.bottom_left {
 		border-bottom: 1px solid $color2;
 		border-left: 1px solid $color2;
 		bottom: 1.25rem;
@@ -417,7 +417,7 @@
 	body.darkMode & {
 		background-color: $color6;
 	}
-	&__title {
+	.trending_title {
 		margin: 10px;
 		font-family: $secondary-font;
 		font-weight: 500;
@@ -429,11 +429,11 @@
 			color: #fff;
 		}
 	}
-	&__container {
+	.trendings_container {
 		max-width: 100%;
 		display: flex;
 		align-items: center;
-		.trending__slider {
+		.slider {
 			width: 100%;
 			display: flex;
 			overflow: scroll;
@@ -450,7 +450,7 @@
 			}
 		}
 	}
-	.trending__slider--container {
+	.slider_trendings_container {
 		overflow: hidden;
 	}
 	@media screen and (min-width: $tablet) {
