@@ -12,7 +12,7 @@ body {
 	color: $color1;
 	transition: $transition;
 
-	&.darkMode {
+	.darkMode {
 		background-color: $color5;
 		color: #fff;
 	}
