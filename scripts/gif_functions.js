@@ -7,9 +7,26 @@ const addToFav = (gif, username, title) => {
 		gif: gif
 	};
 
-	arrFavoriteGifs.push(objGif);
+	let eliminar = false;	
+	for (let index = 0; index < arrFavoriteGifs.length; index++) {
+		const element = arrFavoriteGifs[index];
+		console.log(element.title);
+		console.log(title);
 
-	localStorage.setItem('FavoriteGifs', JSON.stringify(arrFavoriteGifs));
+		console.log(element.username);
+		console.log(username);
+		if((element.title === title) && (element.username === username) ){
+			eliminar = true;
+			break;
+		}
+	}
+
+	if(eliminar){
+		removeGifByUserNameTitle(objGif)
+	}else{
+		arrFavoriteGifs.push(objGif);
+		localStorage.setItem('FavoriteGifs', JSON.stringify(arrFavoriteGifs));
+	}
 	displayFavoriteGifs();
 };
 
@@ -196,7 +213,21 @@ const closeMaximized = () => {
 	$maximizedGifSection.classList.remove('maximizedGif');
 };
 
-// ---- Eliminar en favoritos ---- \\
+const removeGifByUserNameTitle = (gif) => {
+	let arrFavoriteParsed = JSON.parse(localStorage.getItem('FavoriteGifs'));
+	console.log(arrFavoriteParsed);
+	for (let i = 0; i < arrFavoriteParsed.length; i++) {
+		if ((arrFavoriteParsed[i].username === gif.username) && (arrFavoriteParsed[i].title === gif.title)) {
+			arrFavoriteParsed.splice(i, 1);
+			localStorage.setItem(
+				'FavoriteGifs',
+				JSON.stringify(arrFavoriteParsed)
+			);
+			displayFavoriteSection(event);
+			closeMaximized();
+		}
+	}
+};
 
 const removeGif = (gif) => {
 	let arrFavoriteParsed = JSON.parse(localStorage.getItem('FavoriteGifs'));
